@@ -29,7 +29,7 @@ const About = () => {
               Notre Histoire
             </h2>
             <p className="font-inter text-lg text-muted-foreground mb-6 leading-relaxed">
-              Ma Crème est née d'une passion profonde pour l'art de la boulangerie française traditionnelle. Depuis notre création, nous nous engageons à perpétuer un savoir-faire ancestral tout en apportant une touche de modernité à nos créations.
+              Ma Crème est née d'une passion profonde pour l'art de la boulangerie sénéglaise traditionnelle. Depuis notre création, nous nous engageons à perpétuer un savoir-faire ancestral tout en apportant une touche de modernité à nos créations.
             </p>
             <p className="font-inter text-lg text-muted-foreground mb-8 leading-relaxed">
               Chaque jour, notre équipe de boulangers passionnés se lève avant l'aube pour préparer des produits frais qui raviront vos papilles. Notre engagement envers la qualité et l'authenticité fait de chaque visite une expérience unique.

@@ -8,15 +8,15 @@ const Services = () => {
       icon: Phone,
       title: "Commande par Téléphone",
       description: "Appelez-nous pour passer vos commandes",
-      action: "06 12 34 56 78",
-      link: "tel:0612345678",
+      action: "+221 33 857 89 91",
+      link: "tel:+221338578991",
     },
     {
       icon: MessageCircle,
       title: "Commande WhatsApp",
       description: "Contactez-nous facilement via WhatsApp",
       action: "Message WhatsApp",
-      link: "https://wa.me/33612345678",
+      link: "https://wa.me/221784866142",
     },
   ];
 
@@ -114,9 +114,9 @@ const Services = () => {
                     Notre Adresse
                   </h3>
                   <p className="font-inter text-muted-foreground mb-4">
-                    123 Rue de la Boulangerie
+                    Dakar
                     <br />
-                    75001 Paris, France
+                    Diamniadio, Senegindia
                   </p>
                   <Button
                     asChild
@@ -124,7 +124,7 @@ const Services = () => {
                     className="font-inter border-primary text-primary hover:bg-primary hover:text-primary-foreground"
                   >
                     <a
-                      href="https://maps.google.com/?q=Paris,France"
+                      href="https://www.google.com/maps/search/?api=1&query=Diamniadio,+S%C3%A9n%C3%A9gal"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -135,7 +135,7 @@ const Services = () => {
               </div>
               <div className="w-full h-64 rounded-lg overflow-hidden">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83998.94722687634!2d2.277019!3d48.8589507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b005%3A0x40b82c3688c9460!2sParis%2C%20France!5e0!3m2!1sen!2s!4v1234567890"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31003.726688767466!2d-17.175!3d14.7167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec172f5d5e1c1a7%3A0x97d87f6238f7e5f8!2sDiamniadio%2C%20S%C3%A9n%C3%A9gal!5e0!3m2!1sfr!2s!4v1234567890"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}

@@ -31,7 +31,7 @@ const Navbar = () => {
             onClick={() => scrollToSection("accueil")}
             className="flex items-center space-x-2 transition-transform hover:scale-105"
           >
-            <img src={logo} alt="Ma Crème" className="h-16 w-auto object-contain" />
+            <img src="/logo.png" alt="Ma Crème" className="h-16 w-auto object-contain" />
           </button>
 
           {/* Desktop Menu */}

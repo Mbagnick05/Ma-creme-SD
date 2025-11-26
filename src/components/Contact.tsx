@@ -4,10 +4,8 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
-import { useToast } from "@/hooks/use-toast";
 
 const Contact = () => {
-  const { toast } = useToast();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -16,31 +14,37 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    toast({
-      title: "Message envoyé !",
-      description: "Nous vous répondrons dans les plus brefs délais.",
-    });
-    setFormData({ name: "", email: "", message: "" });
+    const subject = encodeURIComponent(`Message de ${formData.name}`);
+    const body = encodeURIComponent(`Nom: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`);
+    const mailtoLink = `mailto:mbagnickn828@gmail.com?subject=${subject}&body=${body}`;
+    
+    // Créer un lien temporaire et le cliquer
+    const link = document.createElement('a');
+    link.href = mailtoLink;
+    link.target = '_blank';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   const contactInfo = [
     {
       icon: Phone,
       title: "Téléphone",
-      value: "06 12 34 56 78",
-      link: "tel:0612345678",
+      value: "+221 33 857 89 91",
+      link: "tel:+221784866142",
     },
     {
       icon: Mail,
       title: "Email",
-      value: "contact@macreme.fr",
-      link: "mailto:contact@macreme.fr",
+      value: "rmbow41@gmail.com",
+      link: "mailto:mbagnickn828@gmail.com",
     },
     {
       icon: MapPin,
       title: "Adresse",
-      value: "123 Rue de la Boulangerie, 75001 Paris",
-      link: "https://maps.google.com/?q=Paris,France",
+      value: "Diamniadio, Senegindia",
+      link: "https://www.google.com/maps/search/?api=1&query=Diamniadio,+S%C3%A9n%C3%A9gal",
     },
   ];
 
@@ -69,7 +73,7 @@ const Contact = () => {
                 <Input
                   id="name"
                   type="text"
-                  placeholder="Votre nom"
+                  placeholder="Votre prénom & nom"
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   required
@@ -83,7 +87,7 @@ const Contact = () => {
                 <Input
                   id="email"
                   type="email"
-                  placeholder="votre@email.fr"
+                  placeholder="votre@email.com"
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   required

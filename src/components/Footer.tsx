@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div>
-            <img src={logo} alt="Ma Crème" className="h-20 w-auto mb-4 brightness-0 invert" />
+            <img src="/logo.png" alt="Ma Crème" className="h-20 w-auto mb-4 brightness-0 invert" />
             <p className="font-inter text-primary-foreground/80">
               Boulangerie artisanale depuis plusieurs générations
             </p>
@@ -49,7 +49,7 @@ const Footer = () => {
                   href="tel:0612345678"
                   className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
                 >
-                  06 12 34 56 78
+                  +221 33 857 89 91
                 </a>
               </li>
               <li className="flex items-center space-x-2">
@@ -58,7 +58,7 @@ const Footer = () => {
                   href="mailto:contact@macreme.fr"
                   className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
                 >
-                  contact@macreme.fr
+                  rmbow41@gmail.com
                 </a>
               </li>
               <li className="flex space-x-4 mt-4">

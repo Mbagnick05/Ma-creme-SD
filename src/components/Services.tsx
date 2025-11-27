@@ -124,7 +124,7 @@ const Services = () => {
                     className="font-inter border-primary text-primary hover:bg-primary hover:text-primary-foreground"
                   >
                     <a
-                      href="https://www.google.com/maps/search/?api=1&query=Diamniadio,+S%C3%A9n%C3%A9gal"
+                      href="https://www.google.com/maps/search/?api=1&query=SD+City,+Diamniadio,+S%C3%A9n%C3%A9gal"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -135,7 +135,7 @@ const Services = () => {
               </div>
               <div className="w-full h-64 rounded-lg overflow-hidden">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31003.726688767466!2d-17.175!3d14.7167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec172f5d5e1c1a7%3A0x97d87f6238f7e5f8!2sDiamniadio%2C%20S%C3%A9n%C3%A9gal!5e0!3m2!1sfr!2s!4v1234567890"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.0000000000005!2d-17.19674!3d14.74294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec172f5d5e1c1a7%3A0xabcdef1234567890!2sSD%20City%20Diamniadio%2C%20Diamniadio%2C%20S%C3%A9n%C3%A9gal!5e0!3m2!1sfr!2s!4v1700000000000"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
